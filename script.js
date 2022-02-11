@@ -45,7 +45,7 @@ addBookBtn.addEventListener("click", (e) => {
 function renderCards(){
     bookCards.innerHTML = bookArr.map((book, index) => {
         return(
-            `<div class="card mx-2 my-2 p-4" style="border: 2px solid #082032; background-image: linear-gradient(100deg, #ff4c29, #334756);">
+            `<div class="card mx-2 my-2 p-4" style="min-width: 18rem;  border: 2px solid #082032; background-image: linear-gradient(100deg, #ff4c29, #334756);">
                 <div class="card-body">
                     <p class="card-text text-light"><b>Book Name</b> : ${book.name}</p>
                     <p class="card-text text-light"><b>Author</b> : ${book.author}</p>
